@@ -19,4 +19,11 @@ public class HeaderPageBL {
         headerPage.getRegisterButton().click();
         return new RegisterPageBL();
     }
+
+    public SearchPageBL useSearch(String product){
+        headerPage.getSearch().click();
+        headerPage.getSearch().clear();
+        headerPage.getSearchStrSub().click();
+        return new SearchPageBL();
+    }
 }
