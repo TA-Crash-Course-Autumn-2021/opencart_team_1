@@ -1,11 +1,13 @@
 package com.opencart.pages;
 
+import lombok.Getter;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 
 import java.util.List;
 
+@Getter
 public class SearchPage extends BasePage {
 
     @FindBy(xpath = ".//input[@id='input-search']")
@@ -31,21 +33,4 @@ public class SearchPage extends BasePage {
 
     @FindBy(xpath = ".//div[@class='product-thumb']")
     List<WebElement> products;
-
-    public List<WebElement> getSearchInCategories() {
-        return searchInCategories;
-    }
-
-    public WebElement getSearchInSubCategories() {
-        return searchInSubCategories;
-    }
-
-    public WebElement getSearchInDesc() {
-        return searchInDesc;
-    }
-
-    public WebElement getSearchFormButton() {
-        return searchFormButton;
-    }
-
 }
