@@ -21,8 +21,8 @@ public class HeaderPageBL {
     }
 
     public SearchPageBL useSearch(String product){
-        headerPage.getSearch().click();
-        headerPage.getSearch().clear();
+        //headerPage.getSearch().click();
+        //headerPage.getSearch().clear();
         headerPage.getSearchStrSub().click();
         return new SearchPageBL();
     }
