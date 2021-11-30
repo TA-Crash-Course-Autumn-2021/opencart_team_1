@@ -1,8 +1,8 @@
-package com.opencart.steps;
+package com.opencart.steps.RegisterPageBL;
 
 import com.opencart.datamodel.RegisterModel;
-import com.opencart.pages.RegisterPage;
-import com.opencart.pages.SuccessRegisterPage;
+import com.opencart.pages.RegisterPage.RegisterPage;
+import com.opencart.pages.RegisterPage.SuccessRegisterPage;
 import com.opencart.repository.RegisterModelRepository;
 import com.opencart.util.DriverUtils;
 import org.testng.Assert;

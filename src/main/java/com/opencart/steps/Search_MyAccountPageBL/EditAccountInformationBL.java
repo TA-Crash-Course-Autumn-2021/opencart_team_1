@@ -1,6 +1,6 @@
-package com.opencart.steps;
+package com.opencart.steps.Search_MyAccountPageBL;
 
-import com.opencart.pages.EditAccountInformation;
+import com.opencart.pages.Search_MyAccountPage.EditAccountInformation;
 
 public class EditAccountInformationBL {
 

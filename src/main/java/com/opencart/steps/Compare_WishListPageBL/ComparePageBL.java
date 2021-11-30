@@ -1,6 +1,6 @@
-package com.opencart.steps.Menu;
+package com.opencart.steps.Compare_WishListPageBL;
 
-import com.opencart.pages.Menu.ComparePage;
+import com.opencart.pages.Compare_WishListPage.ComparePage;
 
 public class ComparePageBL {
 

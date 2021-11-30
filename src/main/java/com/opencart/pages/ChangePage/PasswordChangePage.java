@@ -1,11 +1,12 @@
-package com.opencart.pages;
+package com.opencart.pages.ChangePage;
 
+import com.opencart.pages.BasePage;
 import lombok.Getter;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 @Getter
-public class PasswordChangePage extends BasePage{
+public class PasswordChangePage extends BasePage {
 
     @FindBy(id = "input-password")
     private WebElement changePasswordString;

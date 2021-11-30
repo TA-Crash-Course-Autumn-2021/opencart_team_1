@@ -1,79 +1,77 @@
-package com.opencart.steps.Menu;
+package com.opencart.steps.Compare_WishListPageBL;
 
-import com.opencart.pages.Menu.AddToComparePage;
+import com.opencart.pages.Compare_WishListPage.AddToComparePage;
+import com.opencart.pages.Compare_WishListPage.ProductTypePage;
 import org.testng.Assert;
 
 
-public class AddToComparePageBL {
-    private AddToComparePage addToComparePage;
+public class ProductTypePageBL {
 
-    public AddToComparePageBL() {
+    ProductTypePage productTypePage = new ProductTypePage();
+
+    private AddToComparePage addToComparePage;
+    public ProductTypePageBL() {
         addToComparePage = new AddToComparePage();
     }
 
-    public AddToComparePageBL clickOnCanonEOS5DButton() {
+    public ProductTypePageBL clickOnAddToCartIMacButton() {
+        productTypePage.getAddToCartIMac().click();
+        return this;
+    }
+    public ProductTypePageBL clickOnAddToCartSamsungSyncMaster941BWButton() {
+        productTypePage.getAddToCartSamsungSyncMaster941BWButton().click();
+        return this;
+    }
+    public ProductTypePageBL clickOnAddToCartSamsungGalaxyTab10Button() {
+        productTypePage.getAddToCartSamsungGalaxyTab10().click();
+        return this;
+    }
+    public ProductTypePageBL clickOnAddToCartPalmTreoProButton() {
+        productTypePage.getAddToCartPalmTreoPro().click();
+        return this;
+    }
+    public ProductTypePageBL clickOnCanonEOS5DButton() {
         addToComparePage.getCanonEOS5DButton().click();
         return this;
     }
-    public AddToComparePageBL clickOnAddToCompareButton() {
-        addToComparePage.getAddToCompareButton().click();
-        return this;
-    }
-    public AddToComparePageBL clickOnAddToWishListButton() {
-        addToComparePage.getAddToWishListButton().click();
-        return this;
-    }
-    public AddToComparePageBL clickOnIPhoneButton() {
+    public ProductTypePageBL clickOnIPhoneButton() {
         addToComparePage.getIPhoneButton().click();
         return this;
     }
-    public AddToComparePageBL clickOnSamsungSyncMaster941BWButton() {
+    public ProductTypePageBL clickOnSamsungSyncMaster941BWButton() {
         addToComparePage.getSamsungSyncMaster941BWButton().click();
         return this;
     }
-    public AddToComparePageBL clickOnAppleCinema30Button() {
+    public ProductTypePageBL clickOnAppleCinema30Button() {
         addToComparePage.getAppleCinema30Button().click();
         return this;
     }
 
-    public AddToComparePageBL clickOnMacBookButton() {
+    public ProductTypePageBL clickOnMacBookButton() {
         addToComparePage.getMacBookButton().click();
         return this;
     }
 
-    public AddToComparePageBL clickOnMacBookAirButton() {
+    public ProductTypePageBL clickOnMacBookAirButton() {
         addToComparePage.getMacBookAirButton().click();
         return this;
     }
 
-    public AddToComparePageBL clickOnIPodClassicButton() {
+    public ProductTypePageBL clickOnIPodClassicButton() {
         addToComparePage.getIPodClassicButton().click();
         return this;
     }
 
-    public AddToComparePageBL clickOnIMacAirMenuButton() {
+    public ProductTypePageBL clickOnIMacAirMenuButton() {
         addToComparePage.getIMacButton().click();
         return this;
     }
-    public AddToComparePageBL clickOnSamsungGalaxyTab101Button() {
+    public ProductTypePageBL clickOnSamsungGalaxyTab101Button() {
         addToComparePage.getSamsungGalaxyTab101Button().click();
         return this;
     }
-    public AddToComparePageBL clickOnProductComparisonMac(){
-        addToComparePage.getProductComparisonMac().click();
-        return this;
-    }
-    public AddToComparePageBL clickOnProductComparisonIPhone(){
-        addToComparePage.getProductComparisonIPhone().click();
-        return this;
-    }
-    public AddToComparePageBL clickOnAddToShoppingCartButton(){
-        addToComparePage.getAddToShoppingCart().click();
-        return this;
-    }
-
-    public AddToComparePageBL clickOnRemoveButton(){
-        addToComparePage.getRemoveBottom().click();
+    public ProductTypePageBL clickOnAddToCartButton() {
+        productTypePage.getInputButtonAddToCart().click();
         return this;
     }
     public void verifyAddCanonEOS5D() {
@@ -131,4 +129,14 @@ public class AddToComparePageBL {
         Assert.assertTrue(addToComparePage.getAlertSuccessAdd().getText().contains(nameItem), "Other item");
     }
 
+    public ProductTypePageBL verifyAddProductButton(String Product) {
+        String expectedMessage = "Success";
+        Assert.assertTrue(productTypePage.getAlertSuccessAdd().getText().contains(expectedMessage), "Failed to add item to cart");
+        Assert.assertTrue(productTypePage.getAlertSuccessAdd().getText().contains(Product), "Other item");
+        return this;
+    }
+    public void verifySubtitleNoProductInCategory() {
+        String expectedMessage = "There are no products to list in this category.";
+        Assert.assertTrue(productTypePage.getSubtitleNoProductInCategory().getText().contains(expectedMessage), "Incorrect page title");
+    }
 }

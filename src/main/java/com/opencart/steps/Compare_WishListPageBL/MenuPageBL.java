@@ -1,7 +1,7 @@
-package com.opencart.steps.Menu;
+package com.opencart.steps.Compare_WishListPageBL;
 
 
-import com.opencart.pages.Menu.MenuPage;
+import com.opencart.pages.Compare_WishListPage.MenuPage;
 
 public class MenuPageBL {
     private MenuPage menuPage;

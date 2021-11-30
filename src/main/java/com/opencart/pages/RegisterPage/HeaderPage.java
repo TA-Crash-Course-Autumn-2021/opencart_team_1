@@ -1,5 +1,6 @@
-package com.opencart.pages;
+package com.opencart.pages.RegisterPage;
 
+import com.opencart.pages.BasePage;
 import lombok.Getter;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,8 +23,15 @@ public class HeaderPage extends BasePage {
     @FindBy(xpath = ".//*[@id='search']/span/button")
     private WebElement searchStrSub;
 
+    @FindBy(name = "search")
+    private WebElement search;
+
     public WebElement getMyAccountButton() {
         wait.until(ExpectedConditions.visibilityOf(myAccountButton));
         return myAccountButton;
     }
-}
+    public WebElement getSearch() {
+        return search;
+    }
+
+    }
