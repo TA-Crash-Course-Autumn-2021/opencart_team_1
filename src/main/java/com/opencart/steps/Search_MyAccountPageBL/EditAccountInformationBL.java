@@ -1,6 +1,7 @@
 package com.opencart.steps.Search_MyAccountPageBL;
 
 import com.opencart.pages.Search_MyAccountPage.EditAccountInformation;
+import org.testng.Assert;
 
 public class EditAccountInformationBL {
 
@@ -26,9 +27,9 @@ public class EditAccountInformationBL {
         return this;
     }
 
-    public EditAccountInformationBL setTelephone(String telephone){
-        editAccountInformation.getTelephoneString().clear();
-        editAccountInformation.getTelephoneString().sendKeys(telephone);
+    public EditAccountInformationBL setPhone(String telephone){
+        editAccountInformation.getPhoneString().clear();
+        editAccountInformation.getPhoneString().sendKeys(telephone);
         return this;
     }
 
@@ -37,7 +38,7 @@ public class EditAccountInformationBL {
         return new MyAccountPageBL();
     }
 
-    public MyAccountPageBL editAccountPageContinueButtonClick(){
+    public MyAccountPageBL editAccountInformationContinueButtonClick(){
         editAccountInformation.getEditAccountContinueButton().click();
         return new MyAccountPageBL();
     }

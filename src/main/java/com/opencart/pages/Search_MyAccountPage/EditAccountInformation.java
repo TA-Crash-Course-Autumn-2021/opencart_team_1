@@ -4,6 +4,7 @@ import com.opencart.pages.BasePage;
 import lombok.Getter;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 @Getter
 public class EditAccountInformation extends BasePage {
@@ -18,7 +19,7 @@ public class EditAccountInformation extends BasePage {
     WebElement emailString;
 
     @FindBy(xpath = "//input[@id = 'input-telephone']")
-    WebElement telephoneString;
+    WebElement phoneString;
 
     @FindBy(xpath = "//*[contains(text(), 'Back')]")
     WebElement editAccountBackButton;
@@ -26,4 +27,10 @@ public class EditAccountInformation extends BasePage {
     @FindBy(xpath = "//input[@type = 'submit']")
     WebElement editAccountContinueButton;
 
+    @FindBy(xpath = "//div[@class = 'alert alert-success alert-dismissible']")
+    private WebElement ConfirmMessageChanges;
+
+    public WebElement getChangesConfirmMessage() {
+        wait.until(ExpectedConditions.visibilityOfAllElements(ConfirmMessageChanges));
+        return ConfirmMessageChanges; }
 }

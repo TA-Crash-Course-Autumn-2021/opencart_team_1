@@ -19,4 +19,16 @@ public class RegisterModelRepository {
                 .passwordConfirm(password)
                 .build();
     }
+
+    public static RegisterModel getValidModel() {
+        String password = "123456";
+        return RegisterModel.getBuilder()
+                .firstName("John")
+                .lastName("Smith")
+                .email("validuser@gmail.com")
+                .telephone("+380666666666")
+                .password(password)
+                .passwordConfirm(password)
+                .build();
+    }
 }

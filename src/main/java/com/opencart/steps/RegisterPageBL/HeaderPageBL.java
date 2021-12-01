@@ -13,26 +13,32 @@ public class HeaderPageBL {
         headerPage = new HeaderPage();
     }
 
-    public HeaderPageBL clickOnMyAccountButton() {
+    public HeaderPageBL OnMyAccountButtonClick() {
         headerPage.getMyAccountButton().click();
         return this;
     }
-    public HeaderPageBL clickSearch() {
+
+    public LogInOutPageBL OnLoginButtonClick(){
+        headerPage.getLoginButton().click();
+        return new LogInOutPageBL();
+    }
+
+    public HeaderPageBL SearchClick() {
         headerPage.getSearch().click();
         return this;
     }
-    public RegisterPageBL clickOnRegisterButton() {
+    public RegisterPageBL OnRegisterButtonClick() {
         headerPage.getRegisterButton().click();
         return new RegisterPageBL();
     }
 
-    public SearchPageBL useSearch(String product){
-        //headerPage.getSearch().click();
-        //headerPage.getSearch().clear();
+    public SearchPageBL SearchUse(String product){
+        headerPage.getSearch().click();
+        headerPage.getSearch().clear();
         headerPage.getSearchStrSub().click();
         return new SearchPageBL();
     }
-    public HeaderPageBL clearSearch() {
+    public HeaderPageBL SearchClear() {
         headerPage.getSearch().click();
         return this;
     }
