@@ -1,5 +1,6 @@
-package com.opencart.pages;
+package com.opencart.pages.RegisterPage;
 
+import com.opencart.pages.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 

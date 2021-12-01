@@ -1,5 +1,6 @@
-package com.opencart.pages.Menu;
+package com.opencart.pages.Compare_WishListPage;
 
+import com.opencart.pages.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;

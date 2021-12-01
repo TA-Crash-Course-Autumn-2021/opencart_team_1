@@ -1,6 +1,6 @@
-package com.opencart.steps;
+package com.opencart.steps.Search_MyAccountPageBL;
 
-import com.opencart.pages.SearchPage;
+import com.opencart.pages.Search_MyAccountPage.SearchPage;
 import org.openqa.selenium.WebElement;
 
 public class SearchPageBL {

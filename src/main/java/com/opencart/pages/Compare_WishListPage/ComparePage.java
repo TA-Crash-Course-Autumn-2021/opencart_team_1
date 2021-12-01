@@ -1,4 +1,4 @@
-package com.opencart.pages.Menu;
+package com.opencart.pages.Compare_WishListPage;
 
 
 import com.opencart.pages.BasePage;

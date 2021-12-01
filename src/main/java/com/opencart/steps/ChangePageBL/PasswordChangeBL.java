@@ -1,6 +1,7 @@
-package com.opencart.steps;
+package com.opencart.steps.ChangePageBL;
 
-import com.opencart.pages.PasswordChangePage;
+import com.opencart.pages.ChangePage.PasswordChangePage;
+import com.opencart.steps.Search_MyAccountPageBL.MyAccountPageBL;
 import org.testng.Assert;
 
 public class PasswordChangeBL {

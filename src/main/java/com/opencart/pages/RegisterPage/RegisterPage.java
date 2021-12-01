@@ -1,5 +1,6 @@
-package com.opencart.pages;
+package com.opencart.pages.RegisterPage;
 
+import com.opencart.pages.BasePage;
 import lombok.Getter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
