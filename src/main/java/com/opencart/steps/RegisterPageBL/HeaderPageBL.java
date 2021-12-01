@@ -17,7 +17,14 @@ public class HeaderPageBL {
         headerPage.getMyAccountButton().click();
         return this;
     }
-
+    public HeaderPageBL clickOnMyAccountButton() {
+        headerPage.getMyAccountButton().click();
+        return this;
+    }
+    public RegisterPageBL clickOnRegisterButton() {
+        headerPage.getRegisterButton().click();
+        return new RegisterPageBL();
+    }
     public LogInOutPageBL OnLoginButtonClick(){
         headerPage.getLoginButton().click();
         return new LogInOutPageBL();
@@ -50,6 +57,15 @@ public class HeaderPageBL {
     public AddToComparePageBL sendKeysSearchForCompareProdENTER() {
         headerPage.getSearch().sendKeys(Keys.ENTER);
         return new AddToComparePageBL();
+    }
+
+    public HeaderPageBL clearSearch(){
+        headerPage.getSearch().click();
+        return new HeaderPageBL();
+    }
+    public HeaderPageBL clickSearch(){
+        headerPage.getSearch().click();
+        return new HeaderPageBL();
     }
 
 }

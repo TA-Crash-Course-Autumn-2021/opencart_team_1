@@ -14,8 +14,18 @@ public class AddFourProductToWishListTest extends BaseTest {
         MainPageBL mainPageBL = new MainPageBL();
         WishListPageBL wishListPage = mainPageBL.getWishListPageBL()
                     .clickAddMacBookWishButton()
+                    .sendKeysWish("iPhone")
+                    .sendKeysWishForProdENTER()
                     .clickAddiPhoneWishButton()
+                    .clearSearch()
+                    .clickSearch()
+                    .sendKeysWish("Cinema")
+                    .sendKeysWishForProdENTER()
                     .clickAddAppleCinema30WishButton()
+                    .clearSearch()
+                    .clickSearch()
+                    .sendKeysWish("Canon")
+                    .sendKeysWishForProdENTER()
                     .clickAddCanonEOS5DWishButton()
                     .clickWishListButton()
                     .loginPerson();
