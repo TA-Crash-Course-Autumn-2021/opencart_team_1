@@ -48,7 +48,6 @@ public class AddSixProdToCompareTest extends BaseTest {
         addToComparePageBL.verifyAddSamsungSyncMaster941BW();
 
 
-
         mainPageBL.getHeaderPageBL()
                 .clearSearch()
                 .clickSearch()

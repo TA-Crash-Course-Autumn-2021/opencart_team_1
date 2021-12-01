@@ -1,76 +1,76 @@
 package com.opencart.steps.Compare_WishListPageBL;
 
 import com.opencart.pages.Compare_WishListPage.AddToComparePage;
-import com.opencart.pages.Compare_WishListPage.ProductTypePage;
+import com.opencart.pages.Compare_WishListPage.ShoppingPage;
 import org.testng.Assert;
 
 
-public class ProductTypePageBL {
+public class ShoppingPageBL {
 
-    ProductTypePage productTypePage = new ProductTypePage();
+    ShoppingPage productTypePage = new ShoppingPage();
 
     private AddToComparePage addToComparePage;
-    public ProductTypePageBL() {
+    public ShoppingPageBL() {
         addToComparePage = new AddToComparePage();
     }
 
-    public ProductTypePageBL clickOnAddToCartIMacButton() {
+    public ShoppingPageBL clickOnAddToCartIMacButton() {
         productTypePage.getAddToCartIMac().click();
         return this;
     }
-    public ProductTypePageBL clickOnAddToCartSamsungSyncMaster941BWButton() {
+    public ShoppingPageBL clickOnAddToCartSamsungSyncMaster941BWButton() {
         productTypePage.getAddToCartSamsungSyncMaster941BWButton().click();
         return this;
     }
-    public ProductTypePageBL clickOnAddToCartSamsungGalaxyTab10Button() {
+    public ShoppingPageBL clickOnAddToCartSamsungGalaxyTab10Button() {
         productTypePage.getAddToCartSamsungGalaxyTab10().click();
         return this;
     }
-    public ProductTypePageBL clickOnAddToCartPalmTreoProButton() {
+    public ShoppingPageBL clickOnAddToCartPalmTreoProButton() {
         productTypePage.getAddToCartPalmTreoPro().click();
         return this;
     }
-    public ProductTypePageBL clickOnCanonEOS5DButton() {
+    public ShoppingPageBL clickOnCanonEOS5DButton() {
         addToComparePage.getCanonEOS5DButton().click();
         return this;
     }
-    public ProductTypePageBL clickOnIPhoneButton() {
+    public ShoppingPageBL clickOnIPhoneButton() {
         addToComparePage.getIPhoneButton().click();
         return this;
     }
-    public ProductTypePageBL clickOnSamsungSyncMaster941BWButton() {
+    public ShoppingPageBL clickOnSamsungSyncMaster941BWButton() {
         addToComparePage.getSamsungSyncMaster941BWButton().click();
         return this;
     }
-    public ProductTypePageBL clickOnAppleCinema30Button() {
+    public ShoppingPageBL clickOnAppleCinema30Button() {
         addToComparePage.getAppleCinema30Button().click();
         return this;
     }
 
-    public ProductTypePageBL clickOnMacBookButton() {
+    public ShoppingPageBL clickOnMacBookButton() {
         addToComparePage.getMacBookButton().click();
         return this;
     }
 
-    public ProductTypePageBL clickOnMacBookAirButton() {
+    public ShoppingPageBL clickOnMacBookAirButton() {
         addToComparePage.getMacBookAirButton().click();
         return this;
     }
 
-    public ProductTypePageBL clickOnIPodClassicButton() {
+    public ShoppingPageBL clickOnIPodClassicButton() {
         addToComparePage.getIPodClassicButton().click();
         return this;
     }
 
-    public ProductTypePageBL clickOnIMacAirMenuButton() {
+    public ShoppingPageBL clickOnIMacAirMenuButton() {
         addToComparePage.getIMacButton().click();
         return this;
     }
-    public ProductTypePageBL clickOnSamsungGalaxyTab101Button() {
+    public ShoppingPageBL clickOnSamsungGalaxyTab101Button() {
         addToComparePage.getSamsungGalaxyTab101Button().click();
         return this;
     }
-    public ProductTypePageBL clickOnAddToCartButton() {
+    public ShoppingPageBL clickOnAddToCartButton() {
         productTypePage.getInputButtonAddToCart().click();
         return this;
     }
@@ -129,7 +129,7 @@ public class ProductTypePageBL {
         Assert.assertTrue(addToComparePage.getAlertSuccessAdd().getText().contains(nameItem), "Other item");
     }
 
-    public ProductTypePageBL verifyAddProductButton(String Product) {
+    public ShoppingPageBL verifyAddProductButton(String Product) {
         String expectedMessage = "Success";
         Assert.assertTrue(productTypePage.getAlertSuccessAdd().getText().contains(expectedMessage), "Failed to add item to cart");
         Assert.assertTrue(productTypePage.getAlertSuccessAdd().getText().contains(Product), "Other item");

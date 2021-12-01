@@ -10,6 +10,10 @@ public class AddProductToShoppingCart extends BaseTest {
     public void addOneComplexProductToCartTest() {
         new Navigation().navigateToUrl(BASE_URL.getValue());
         MainPageBL mainPageBL = new MainPageBL();
-
+        mainPageBL.getMenuPageBL()
+                .clickOnDesktopsButton()
+                .clickOnMacButton()
+                .clickOnAddToCartIMacButton()
+                .verifyAddProductButton("iMac");
     }
 }
