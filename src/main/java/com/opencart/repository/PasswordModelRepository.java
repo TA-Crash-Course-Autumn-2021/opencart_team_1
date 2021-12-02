@@ -9,7 +9,6 @@ public class PasswordModelRepository {
 
     public static PasswordModel validPassword() {
         String password = LoginModelRepository.getValidLoginModel().getPassword();
-        // String password = RandomStringUtils.randomAlphabetic(6);
         return PasswordModel.getBuilder()
                 .password(password)
                 .passwordConfirm(password)
