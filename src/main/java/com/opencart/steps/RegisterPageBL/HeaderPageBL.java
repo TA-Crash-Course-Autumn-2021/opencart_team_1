@@ -17,10 +17,6 @@ public class HeaderPageBL {
         headerPage.getMyAccountButton().click();
         return this;
     }
-    public HeaderPageBL clickOnMyAccountButton() {
-        headerPage.getMyAccountButton().click();
-        return this;
-    }
     public RegisterPageBL clickOnRegisterButton() {
         headerPage.getRegisterButton().click();
         return new RegisterPageBL();

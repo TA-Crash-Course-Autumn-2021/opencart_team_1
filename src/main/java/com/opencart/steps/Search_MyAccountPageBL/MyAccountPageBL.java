@@ -3,6 +3,7 @@ package com.opencart.steps.Search_MyAccountPageBL;
 import com.opencart.driver.DriverRepository;
 import com.opencart.pages.Search_MyAccountPage.EditAccountInformation;
 import com.opencart.pages.Search_MyAccountPage.MyAccountPage;
+import com.opencart.steps.ChangePageBL.PasswordChangeBL;
 import com.opencart.steps.Search_MyAccountPageBL.EditAccountInformationBL;
 import org.testng.Assert;
 
