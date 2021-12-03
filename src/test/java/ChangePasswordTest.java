@@ -16,7 +16,7 @@ public class ChangePasswordTest extends BaseTest {
                 .getMyAccountPageBL()
                 .myAccountPassChangeClick()
                 .getPasswordChangeBL()
-                .successfulChangePassword().verifyChangePassword();
+                .PasswordChangeSuccess().PasswordChangeSuccessed();
 
     }
 
@@ -30,7 +30,7 @@ public class ChangePasswordTest extends BaseTest {
                 .getMyAccountPageBL()
                 .myAccountPassChangeClick()
                 .getPasswordChangeBL()
-                .unsuccessfulChangePassword().verifyChangePasswordsNotMatch();
+                .PasswordChangeUnsuccess().PasswordChangeMissmatch();
 
     }
 

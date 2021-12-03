@@ -48,4 +48,14 @@ public class PasswordChangeBL {
         clickOnContinueButton();
         return this;
     }
+
+    public void PasswordChangeSuccessed() {
+        String expectedMessage = "Success: Your password has been successfully updated.";
+        Assert.assertEquals(passwordChangePage.getSuccessLoginAlert().getText(), expectedMessage, "Incorrect page alert");
+    }
+
+    public void PasswordChangeMissmatch() {
+        String expectedMessage = "Password confirmation does not match password!";
+        Assert.assertTrue(passwordChangePage.passwordChangeFailed().contains(expectedMessage),"Password and Password confirm are the same");
+    }
 }
