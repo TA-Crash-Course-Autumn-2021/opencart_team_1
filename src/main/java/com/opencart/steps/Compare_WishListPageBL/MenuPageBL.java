@@ -56,33 +56,33 @@ public class MenuPageBL {
         return this;
     }
 
-    public ProductTypePageBL clickOnMonitorsButton() {
+    public ShoppingPageBL clickOnMonitorsButton() {
         menuPage.getMonitors().click();
-        return new ProductTypePageBL();
+        return new ShoppingPageBL();
     }
 
-    public ProductTypePageBL clickOnTabletsButton() {
+    public ShoppingPageBL clickOnTabletsButton() {
         menuPage.getTabletsButton().click();
-        return new ProductTypePageBL();
+        return new ShoppingPageBL();
     }
 
-    public ProductTypePageBL clickOnSoftwareButton() {
+    public ShoppingPageBL clickOnSoftwareButton() {
         menuPage.getSoftwareButton().click();
-        return new ProductTypePageBL();
+        return new ShoppingPageBL();
     }
 
-    public ProductTypePageBL clickOnPhones_PDAsButton() {
+    public ShoppingPageBL clickOnPhones_PDAsButton() {
         menuPage.getPhones_PDAsButton().click();
-        return new ProductTypePageBL();
+        return new ShoppingPageBL();
     }
 
-    public ProductTypePageBL clickOnCamerasButton() {
+    public ShoppingPageBL clickOnCamerasButton() {
         menuPage.getCamerasButton().click();
-        return new ProductTypePageBL();
+        return new ShoppingPageBL();
     }
 
-    public ProductTypePageBL clickOnMacButton() {
+    public ShoppingPageBL clickOnMacButton() {
         menuPage.getMac().click();
-        return new ProductTypePageBL();
+        return new ShoppingPageBL();
     }
 }

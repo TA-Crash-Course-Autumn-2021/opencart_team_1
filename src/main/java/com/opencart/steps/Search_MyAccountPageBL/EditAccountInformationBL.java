@@ -1,6 +1,7 @@
 package com.opencart.steps.Search_MyAccountPageBL;
 
 import com.opencart.pages.Search_MyAccountPage.EditAccountInformation;
+import com.opencart.steps.ChangePageBL.PasswordChangeBL;
 import org.testng.Assert;
 
 public class EditAccountInformationBL {
@@ -41,5 +42,9 @@ public class EditAccountInformationBL {
     public MyAccountPageBL editAccountInformationContinueButtonClick(){
         editAccountInformation.getEditAccountContinueButton().click();
         return new MyAccountPageBL();
+    }
+
+    public PasswordChangeBL getPasswordChangeBL() {
+        return new PasswordChangeBL();
     }
 }

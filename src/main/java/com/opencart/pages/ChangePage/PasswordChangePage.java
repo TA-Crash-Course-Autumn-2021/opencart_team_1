@@ -22,4 +22,9 @@ public class PasswordChangePage extends BasePage {
 
     @FindBy(xpath = "//*[contains(text(), 'Success')]")
     private WebElement successLoginAlert;
+
+    @FindBy(xpath = "//div[@class = 'text-danger']")
+    private WebElement PasswordChangeFailed;
+
+    public String passwordChangeFailed() { return PasswordChangeFailed.getText(); }
 }

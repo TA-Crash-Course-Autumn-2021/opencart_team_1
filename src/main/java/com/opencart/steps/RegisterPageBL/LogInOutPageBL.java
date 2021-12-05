@@ -72,4 +72,8 @@ public class LogInOutPageBL {
         loginPageLoginButtonClick();
         return this;
     }
+
+    public MyAccountPageBL getMyAccountPageBL() {
+        return new MyAccountPageBL();
+    }
 }

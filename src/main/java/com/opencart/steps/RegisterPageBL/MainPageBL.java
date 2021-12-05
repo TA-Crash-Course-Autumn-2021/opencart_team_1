@@ -11,7 +11,6 @@ public class MainPageBL {
 
     public WishListPageBL getWishListPageBL() {return new WishListPageBL();}
 
-
     public MenuPageBL getMenuPageBL() {return new MenuPageBL();}
 
 }
